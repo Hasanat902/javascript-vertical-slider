@@ -18,15 +18,16 @@ body {
     height: 100vh;
 }
 
-.left-side{
+.left-slide{
     height: 100%;
     width: 35%;
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform .5s ease-in-out;
 }
 
-.left-side > div{
+.left-slide > div{
     height: 100%;
     width: 100%;
     display: flex;
@@ -36,21 +37,22 @@ body {
     color: #fff;
 }
 
-.left-side h1{
+.left-slide h1{
     font-size: 40px;
     margin-bottom: 10px;
     margin-top: -30px;
 }
 
-.right-side{
+.right-slide{
     height: 100%;
     position: absolute;
     top: 0;
     left: 35%;
     width: 65%;
+    transition: transform .5s ease-in-out;
 }
 
-.right-side > div{
+.right-slide > div{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
